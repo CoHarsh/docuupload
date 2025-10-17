@@ -1,4 +1,4 @@
-package org.acme;
+package org.harsh;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -10,6 +10,7 @@ public class GreetingResource {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
+//    @RolesAllowed("user")
     public String hello() {
         return "Hello RESTEasy";
     }
